@@ -3,3 +3,10 @@ services:
         class: BitBag\CmsPlugin\Controller\PageSlugController
         arguments:
             - "@sylius.generator.slug"
+
+    bitbag_sylius_cms_plugin.controller.section.show_section_list:
+        class: BitBag\SyliusCmsPlugin\Controller\Section\ShowSectionListAction
+        arguments:
+            - "@fos_rest.view_handler.default"
+            - "@bitbag_sylius_cms_plugin.view_repository.section_lis_view"
+            - "%locale%"

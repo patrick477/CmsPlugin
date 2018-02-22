@@ -44,4 +44,17 @@ class SectionRepository extends EntityRepository implements SectionRepositoryInt
             ->getResult()
         ;
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function findByLocale(string $localeCode): array
+    {
+        return $this->createQueryBuilder('o')
+            ->innerJoin('o.translations', 'translation', 'WITH', 'translation.locale = :locale')
+            ->setParameter('locale', $localeCode)
+            ->getQuery()
+            ->getResult()
+        ;
+    }
 }

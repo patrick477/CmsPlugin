@@ -1,0 +1,5 @@
+bitbag_sylius_cms_plugin_shop_api_section_list:
+    path: /sections
+    methods: [GET]
+    defaults:
+        _controller: bitbag_sylius_cms_plugin.controller.section.show_section_list

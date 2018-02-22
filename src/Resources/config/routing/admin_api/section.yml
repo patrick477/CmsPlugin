@@ -1,0 +1,11 @@
+bitbag_sylius_cms_plugin_admin_api_section:
+    resource: |
+        alias: bitbag_sylius_cms_plugin.section
+        identifier: code
+        section: admin_api
+        except: ['show']
+        form: BitBag\SyliusCmsPlugin\Form\Type\SectionType
+        serialization_version: $version
+        criteria:
+            code: $code
+    type: sylius.resource_api

@@ -1,0 +1,2 @@
+bitbag_sylius_cms_plugin_shop_api_section:
+    resource: "@BitBagSyliusCmsPlugin/Resources/config/routing/shop_api/section.yml"

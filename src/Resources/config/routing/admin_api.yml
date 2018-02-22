@@ -1,0 +1,11 @@
+bitbag_sylius_cms_plugin_admin_api_section:
+    resource: "@BitBagSyliusCmsPlugin/Resources/config/routing/admin_api/section.yml"
+
+bitbag_sylius_cms_plugin_admin_api_page:
+    resource: "@BitBagSyliusCmsPlugin/Resources/config/routing/admin_api/page.yml"
+
+bitbag_sylius_cms_plugin_admin_api_block:
+    resource: "@BitBagSyliusCmsPlugin/Resources/config/routing/admin_api/block.yml"
+
+bitbag_sylius_cms_plugin_admin_api_frequently_asked_question:
+    resource: "@BitBagSyliusCmsPlugin/Resources/config/routing/admin_api/frequently_asked_question.yml"

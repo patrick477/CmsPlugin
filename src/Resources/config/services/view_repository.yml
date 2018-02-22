@@ -1,0 +1,6 @@
+services:
+    bitbag_sylius_cms_plugin.view_repository.section_lis_view:
+        class: BitBag\SyliusCmsPlugin\ViewRepository\SectionListViewRepository
+        arguments:
+            - "@bitbag_sylius_cms_plugin.repository.section"
+            - "@bitbag_sylius_cms_plugin.factory.section_view"

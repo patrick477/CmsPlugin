@@ -2,6 +2,14 @@ bitbag_admin:
     resource: "@BitBagCmsPlugin/Resources/config/routing/admin.yml"
     prefix: /admin
 
-bitbag_shop:
-    resource: "@BitBagCmsPlugin/Resources/config/routing/shop.yml"
+bitbag_sylius_cms_plugin_shop:
+    resource: "@BitBagSyliusCmsPlugin/Resources/config/routing/shop.yml"
     prefix: /{_locale}
+
+bitbag_sylius_cms_plugin_admin_api:
+    resource: "@BitBagSyliusCmsPlugin/Resources/config/routing/admin_api.yml"
+    prefix: /api/v{version}
+
+bitbag_sylius_cms_plugin_shop_api:
+    resource: "@BitBagSyliusCmsPlugin/Resources/config/routing/shop_api.yml"
+    prefix: /shop-api

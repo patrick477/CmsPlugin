@@ -6,12 +6,12 @@ BitBag\CmsPlugin\Entity\Section:
             expose: true
             type: integer
             xml_attribute: true
-            groups: [Autocomplete]
+            groups: [Autocomplete, Default]
         code:
             expose: true
             type: string
-            groups: [Autocomplete]
+            groups: [Autocomplete, Default]
     virtual_properties:
         getName:
             serialized_name: name
-            groups: [Autocomplete]
+            groups: [Autocomplete, Default]

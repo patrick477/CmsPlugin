@@ -6,3 +6,9 @@ services:
         decoration_priority: 1
         arguments:
             - "@bitbag.custom_factory.block.inner"
+            - "@bitbag_sylius_cms_plugin.custom_factory.block.inner"
+
+    bitbag_sylius_cms_plugin.factory.section_view:
+        class: BitBag\SyliusCmsPlugin\Factory\SectionViewFactory
+        arguments:
+            - BitBag\SyliusCmsPlugin\View\SectionView

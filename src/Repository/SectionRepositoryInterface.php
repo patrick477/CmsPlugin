@@ -33,4 +33,11 @@ interface SectionRepositoryInterface extends RepositoryInterface
      * @return SectionInterface[]
      */
     public function findByNamePart(string $phrase, ?string $locale = null): array;
+
+    /**
+     * @param string $localeCode
+     *
+     * @return SectionInterface[]
+     */
+    public function findByLocale(string $localeCode): array;
 }
